@@ -11,6 +11,7 @@
       --text-color:#111;
       --meta-color:#888;
       --base-font: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Roboto, "Noto Sans KR", sans-serif;
+      --divider-color:#ddd;
     }
 
     html, body { height:100%; }
@@ -45,17 +46,18 @@
     .meta div { margin-bottom:0.2em; }
 
     .description {
-      white-space:pre-line;
+      white-space:pre-line; /* 줄바꿈 그대로 유지 */
       font-size:16px;
       color:var(--text-color);
+      margin-top:0;
     }
 
     .emph { font-style: italic; }
 
     /* 구분선 — 위쪽 여백 넓게 */
     .divider {
-      margin:3.5em 0 1.2em 0;
-      border-top:1px solid #ddd;
+      margin:3em 0 1em 0;
+      border-top:1px solid var(--divider-color);
     }
 
     @media (max-width:420px){
@@ -89,21 +91,14 @@
 
   <div class="divider"></div>
 
-  <div class="description last">
-[Gun bless you.
-But only in another world…]
+  <div class="description">
+[Gun bless you. But only in another world…]
 
-The title “<span class="emph">Eunchong: Silver Gun</span>” plays on a triple meaning in Korean: 
-<span class="emph">eun</span> means silver, <span class="emph">chong</span> means gun, and together <span class="emph">Eunchong</span> also means grace or divine blessing.
-
-This work takes the form of a gun named Grace.  
+The title “<span class="emph">Eunchong</span>” plays on a twofold meaning in Korean: <span class="emph">eun</span> means silver, <span class="emph">chong</span> means gun, and <span class="emph">Eunchong</span> also means grace.  
+This work takes the form of a silver gun named Grace.  
 A blessing, or so it claims.
 
-Yet who could ever say for certain whether such a “blessing” is real— in the moment it strikes, or in whatever may follow beyond it?  
-Perhaps the stillness that comes at the very end is the only grace we ever receive.
-
-<br><br> <!-- 마지막 영어 캡션 뒤 두 줄 띄기 -->
-  </div>
+</div>
 
 </body>
 </html>
